@@ -1,6 +1,53 @@
 ---
 ---
 
+:root {
+    /* Default theme */
+    --link-color: #2F4F4F;
+    --hover-color: #7A8F7F;
+    --bg-color: #F5F7F6;
+
+    /* Sage/Navy */
+    --theme-1-link: #2F4F4F;
+    --theme-1-hover: #7A8F7F;
+    --theme-1-bg: #F5F7F6;
+
+    /* Teal/Ocean */
+    --theme-2-link: #2A7F7F;
+    --theme-2-hover: #5B88A5;
+    --theme-2-bg: #F7FAFA;
+
+    /* Forest Green */
+    --theme-3-link: #3B7A5B;
+    --theme-3-hover: #75956C;
+    --theme-3-bg: #F8FAF8;
+
+    /* Olive Green */
+    --theme-4-link: #4A6741;
+    --theme-4-hover: #8B9A7D;
+    --theme-4-bg: #F9FAF7;
+
+    /* Warm Honey */
+    --theme-5-link: #996B2F;
+    --theme-5-hover: #D4A76A;
+    --theme-5-bg: #FAF9F6;
+
+    /* Golden Ochre */
+    --theme-6-link: #8B7355;
+    --theme-6-hover: #C4A484;
+    --theme-6-bg: #FAF8F4;
+
+    /* Mustard */
+    --theme-7-link: #8B7E4B;
+    --theme-7-hover: #BDB76B;
+    --theme-7-bg: #FAF9F5;
+
+    /* Original Red/Yellow */
+    --theme-8-link: #C15B78;
+    --theme-8-hover: #F4A460;
+    --theme-8-bg: #FAF9F7;
+}
+
 body {
     font-family: "Times New Roman", Times, serif;
     font-size: 16px;
@@ -9,7 +56,7 @@ body {
     margin: 100px auto 40px auto;
     padding: 0 40px;
     color: #000;
-    background-color: #FAF9F7;
+    background-color: var(--bg-color);
 }
 
 h1 {
@@ -19,18 +66,18 @@ h1 {
 }
 
 a {
-    color: #C15B78;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 /* This keeps links black even after visiting */
 a:visited {
-    color: #C15B78;
+    color: var(--link-color);
 }
 
 /* Optional: This keeps links black when hovering */
 a:hover {
-    color: #F4A460;
+    color: var(--hover-color);
 }
 
 ul {
@@ -44,4 +91,12 @@ li {
 
 p {
     margin: 16px 0;
+}
+
+img.theme-image {
+    max-width: 100%;
+    display: block;
+    margin: 40px auto;  /* Top/bottom margin of 40px, auto for left/right centers it */
+    height: auto;       /* Maintains aspect ratio */
+    max-height: 400px;  /* Optional: limits maximum height */
 }

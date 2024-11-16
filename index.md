@@ -9,3 +9,5 @@ We build code generation and cataloging software that data teams use to analyze 
 I write [Take Five](https://shivamsinghal.substack.com/) and [the Structured Blog](https://structuredlabs.substack.com/).
 
 *shivam at structuredlabs.com*
+
+<img id="theme-image" class="theme-image" alt="Theme artwork">
