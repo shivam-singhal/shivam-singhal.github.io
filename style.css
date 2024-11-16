@@ -9,6 +9,7 @@ body {
     margin: 100px auto 40px auto;
     padding: 0 40px;
     color: #000;
+    background-color: #FAF9F7;
 }
 
 h1 {
@@ -18,18 +19,18 @@ h1 {
 }
 
 a {
-    color: #000;
-    text-decoration: underline;
+    color: #C15B78;
+    text-decoration: none;
 }
 
 /* This keeps links black even after visiting */
 a:visited {
-    color: #000;
+    color: #C15B78;
 }
 
 /* Optional: This keeps links black when hovering */
 a:hover {
-    color: #000;
+    color: #F4A460;
 }
 
 ul {
