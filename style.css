@@ -94,9 +94,9 @@ p {
 }
 
 img.theme-image {
-    max-width: 100%;
-    display: block;
-    margin: 40px auto;  /* Top/bottom margin of 40px, auto for left/right centers it */
-    height: auto;       /* Maintains aspect ratio */
-    max-height: 400px;  /* Optional: limits maximum height */
+    max-width: 100% !important;
+    display: block !important;
+    margin: 40px auto !important; /* Top/bottom margin of 40px, auto for left/right centers it */
+    height: auto !important;      /* Maintains aspect ratio */
+    max-height: 400px !important; /* Optional: limits maximum height */
 }

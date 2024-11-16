@@ -4,70 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css">
     <script>
         // Define theme content
         const themes = [
             {
                 name: "Sage/Navy",
-                image: "/images/hokusai_waves.jpg",
+                image: "images/hokusai_waves.jpg",
                 alt: "Hokusai waves woodblock print"
             },
             {
                 name: "Teal/Ocean",
-                image: "/images/turner_sea.jpg",
+                image: "images/turner_sea.jpg",
                 alt: "JMW Turner seascape painting"
             },
             {
                 name: "Forest Green",
-                image: "/images/ernest_haeckel_ferns.jpg",
+                image: "images/ernest_haeckel_ferns.jpg",
                 alt: "Ernest Haeckel Ferns"
             },
             {
                 name: "Olive Green",
-                image: "/images/van_gogh_olive.jpg",
+                image: "images/van_gogh_olive.jpg",
                 alt: "Van Gogh olive trees"
             },
             {
                 name: "Warm Honey",
-                image: "/images/georgia_okeefe_desert.jpg",
+                image: "images/georgia_okeefe_desert.jpg",
                 alt: "O'Keeffe desert landscape"
             },
             {
                 name: "Golden Ochre",
-                image: "/images/georgia_okeefe_desert.jpg",
+                image: "images/georgia_okeefe_desert.jpg",
                 alt: "O'Keeffe desert landscape"
             },
             {
                 name: "Mustard",
-                image: "/images/van_gogh_wheat_fields.jpg",
+                image: "images/van_gogh_wheat_fields.jpg",
                 alt: "Van Gogh wheat field"
             },
             {
                 name: "Red/Yellow",
-                image: "/images/japanese_maple.jpg",
+                image: "images/japanese_maple.jpg",
                 alt: "Japanese maple leaves"
             }
         ];
 
         window.onload = function() {
             // Get and increment theme number
-            let themeNum = parseInt(localStorage.getItem('themeNum') || '0');
-            themeNum = (themeNum + 1) % themes.length;
-            localStorage.setItem('themeNum', themeNum);
-            
-            // Apply theme colors
-            const root = document.documentElement;
-            root.style.setProperty('--link-color', getComputedStyle(root).getPropertyValue(`--theme-${themeNum + 1}-link`));
-            root.style.setProperty('--hover-color', getComputedStyle(root).getPropertyValue(`--theme-${themeNum + 1}-hover`));
-            root.style.setProperty('--bg-color', getComputedStyle(root).getPropertyValue(`--theme-${themeNum + 1}-bg`));
-            
-            // Update image
-            const themeImage = document.getElementById('theme-image');
-            if (themeImage) {
-                const theme = themes[themeNum];
-                themeImage.src = theme.image;
-                themeImage.alt = theme.alt;
+            // let themeNum = parseInt(localStorage.getItem('themeNum') || '0');
+            // themeNum = (themeNum + 1) % themes.length;
+            // localStorage.setItem('themeNum', themeNum);
+            try {
+                let themeNum = 0;
+                try {
+                    themeNum = parseInt(localStorage.getItem('themeNum') || '0');
+                } catch (e) {
+                    console.log('localStorage not available');
+                }
+                themeNum = (themeNum + 1) % themes.length;
+                try {
+                    localStorage.setItem('themeNum', themeNum);
+                } catch (e) {
+                    console.log('localStorage not available');
+                }
+                
+                // Apply theme colors
+                const root = document.documentElement;
+                root.style.setProperty('--link-color', getComputedStyle(root).getPropertyValue(`--theme-${themeNum + 1}-link`));
+                root.style.setProperty('--hover-color', getComputedStyle(root).getPropertyValue(`--theme-${themeNum + 1}-hover`));
+                root.style.setProperty('--bg-color', getComputedStyle(root).getPropertyValue(`--theme-${themeNum + 1}-bg`));
+                
+                // Update image
+                const themeImage = document.getElementById('theme-image');
+                if (themeImage) {
+                    const theme = themes[themeNum];
+                    themeImage.src = theme.image;
+                    themeImage.alt = theme.alt;
+                }
+            } catch (e) {
+                console.error('Theme application failed:', e);
             }
         };
     </script>
