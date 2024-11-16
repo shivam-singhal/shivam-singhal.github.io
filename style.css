@@ -18,8 +18,18 @@ h1 {
 }
 
 a {
-    color: #0000EE;
+    color: #000;
     text-decoration: underline;
+}
+
+/* This keeps links black even after visiting */
+a:visited {
+    color: #000;
+}
+
+/* Optional: This keeps links black when hovering */
+a:hover {
+    color: #000;
 }
 
 ul {
