@@ -2,11 +2,11 @@
 layout: default
 ---
 
-I cofounded [Structured](https://www.structuredlabs.com) to build better data infrastructure.
+I cofounded [Structured](https://www.structuredlabs.com) to build better data infrastructure built on principles of functional programming, type-safety, and query optimization.
 
-We build code generation and cataloging software that data teams use to analyze large datasets.
+We build code generation and cataloging software to analyze novel, disparate data.
 
-I write [Take Five](https://shivamsinghal.substack.com/) and [the Structured Blog](https://structuredlabs.substack.com/).
+I write [the Structured Blog](https://structuredlabs.substack.com/) and [Take Five](https://shivamsinghal.substack.com/).
 
 *shivam at structuredlabs.com*
 
