@@ -6,7 +6,7 @@ I cofounded [Structured](https://www.structuredlabs.com) to build better data in
 
 We build code generation and cataloging software to analyze novel, disparate data.
 
-I write [here](https://structuredlabs.substack.com/) and [here](https://shivamsinghal.substack.com/).
+Ocasionally, I write [here](https://structuredlabs.substack.com/) and [here](https://shivamsinghal.substack.com/).
 
 *shivam at structuredlabs.com*
 
