@@ -67,12 +67,13 @@ h1 {
 
 a {
     color: var(--link-color);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* This keeps links black even after visiting */
 a:visited {
     color: var(--link-color);
+    text-decoration: underline;
 }
 
 /* Optional: This keeps links black when hovering */
