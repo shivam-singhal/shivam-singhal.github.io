@@ -4,7 +4,7 @@ layout: default
 
 I cofounded [Waldium](https://www.waldium.com) to build tools for writing and publishing.
 
-I write [here](https://shivamsinghal.net/blog) occasionally.
+I write [here](https://shivamsinghal.net/writing) occasionally.
 
 *shivam at waldium.com*
 
